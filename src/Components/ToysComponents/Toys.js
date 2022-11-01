@@ -10,7 +10,7 @@ const Toys = () => {
         .filter(toy => {
             if (selectedCategory === 'ALL') return true;
             return selectedCategory === toy.category;
-          })
+        })
         .map (toy=>
         <Toy key={toy.id}toy={toy}/>)}
     </div>)

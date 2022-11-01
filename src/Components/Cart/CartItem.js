@@ -1,12 +1,12 @@
 import { useDispatch } from 'react-redux';
 import dataToys from '../../dataToys.js'
-import { removeItemFromCart } from '../../redux/cartSlice.js';
+import { removeItemFromCart, decreaseCart, increaseCart } from '../../redux/cartSlice.js';
 
 const CartItem = ({cartItem}) => {
     
     const toys = dataToys.find (item => item.id === cartItem.toyId)
     const dispatch = useDispatch();
-
+    
     return (<div className='box'>
         <div className='container'>
             <div className='cart-img'>
@@ -19,9 +19,15 @@ const CartItem = ({cartItem}) => {
         </div>
         <hr />
         <div className='container-two'>
-            <p className='cart-p'>{cartItem.quantity} pc(s)</p>
+        <div className="btn-box">
+        <button className='btn-q inc' onClick = {() => {dispatch(decreaseCart({cartItemID: cartItem.id}))}
+            }>-</button>
+        <span className='btn-q spn'>{cartItem.quantity}</span>
+        <button className='btn-q inc' onClick = {() => {dispatch(increaseCart({cartItemID: cartItem.id}))}
+            }>+</button>
+        </div>
             <p className='cart-p'>Total: ${toys.price*cartItem.quantity}</p>
-            <span onClick = {() => dispatch(removeItemFromCart({cartItemID: cartItem.id}))}>
+            <span className="cart-p" onClick = {() => dispatch(removeItemFromCart({cartItemID: cartItem.id}))}>
             <img className="icon cart-p" src="https://img.icons8.com/external-colours-bomsymbols-/344/external-bin-business-marketing-colors-set-2-colours-bomsymbols--2.png" alt='icon'/> 
             </span>
         </div>

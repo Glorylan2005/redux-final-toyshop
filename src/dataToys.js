@@ -1,5 +1,4 @@
 const dataToys = [
-
     {
     id: 1,
     price: 10,
@@ -95,7 +94,6 @@ const dataToys = [
     name: 'Your Look - Salon and Spa Play Set',
     category: 'PRETEND PLAY'
     }
-
 ] 
 
 export default dataToys;

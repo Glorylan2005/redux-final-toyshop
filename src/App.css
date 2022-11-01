@@ -28,10 +28,13 @@ body {
   z-index: -1;
 }
 .score {
-  padding: 1px 5px;
+  padding: 5px 5px;
+  text-align: center;
+  width: 30px;
+  height: 30px;
   border-radius: 15px;
   margin-left: -32px;
-  margin-top: -8px;
+  margin-top: -6px;
   color: red;
   background-color: rgba(255, 255, 255, 0.5);
   font-size: 14px;
@@ -61,9 +64,6 @@ body {
 .link:hover {
   color: #7ede30;
 }
-/* .none {
-  display: none;
-} */
 #responsive-navbar-nav {
   justify-content: flex-end;
 }
@@ -113,7 +113,6 @@ p {
   font-weight: bold;
   text-align: center;
 }
-
 h3 {
   color: rgb(0, 78, 161);
   font-family: 'Gluten', cursive;
@@ -149,7 +148,6 @@ img {
   box-shadow: inset rgb(20, 107, 37) 0 -2px 5px, inset rgba(252,255,255,1) 0 2px 8px, rgba(56, 55, 55, 0.8) 0 2px 2px 1px;
   color: rgb(0, 78, 161);
 }
-
 .p_cart {
   margin-top: 100px;
   font-size: 40px;
@@ -158,7 +156,6 @@ p {
   background-color: rgb(0, 78, 161);
   color: white;
   font-size: 24px;
-  
 }
 /* --------------Filter--------------------- */
 
@@ -175,7 +172,6 @@ p {
   margin: 10px;
   padding: 5px;
 }
-
 .num-items {
   background-color: rgb(0, 78, 161);
   color: rgb(238,111,33);
@@ -197,7 +193,6 @@ hr {
 .container-two {
   display: flex;
   justify-content: space-around;
-  
 }
 .box {
   background-color: rgb(0, 78, 161);;
@@ -212,7 +207,7 @@ hr {
   padding: 10px;
 }
 .cart-p {  padding-left: 20px;
-  text-align: center;
+  align-self: center;
 }
 .icon {
   width: 50px;
@@ -255,26 +250,148 @@ hr {
 .spn {
   font-size: 18px;
   text-align: center;
+  padding-bottom: 0;
+  margin-bottom: 7px;
 }
 .inc {
   height: 38px;
 }
-
 .contact, .about {
   margin-top: 100px;
-  color: rgb(238,111,33);
   text-align: center;
   font-family: 'Gluten', cursive;
   font-size: 40px;
-  background-color: rgb(0, 78, 161);
 }
+
+/* -------Footer-------------------------- */
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  flex-wrap: wrap;
+  background: rgb(0, 78, 161) radial-gradient(130% 100% at 120% 5px, rgba(255, 255, 255, 0.546), rgba(0,0,0,0));
+  box-shadow: inset rgba(61, 60, 60, 0.6) 0 -2px 5px, inset rgba(252,255,255,1) 0 2px 8px, rgba(56, 55, 55, 0.8) 0 2px 5px -1px;
+  margin-top: 50px;
+}
+.foottext {
+  font-family: 'Gluten', cursive;
+  font-size: 20px;
+  align-self: center;
+  color: white;
+  background: none;
+  margin: 0;
+}
+.greenimg {
+  margin-top: 10px;
+}
+.cart-empty {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+/* ----------------About-------------------------- */
+
+.picabout {
+  margin-bottom: 20px;
+  border-radius: 30px;
+  width: 500px;
+  background-color: none;
+}
+.pabout {
+  padding: 10px 60px;
+}
+.values {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  flex-wrap: wrap;
+}
+.value {
+  width: 240px;
+  padding: 20px;
+}
+.pic {
+width: 100px;
+height: 100px;
+}
+.valuep {
+  font-size: 20px;
+}
+.contbox {
+  align-self: center;
+}
+
+/* --------------Contact Us----------------------- */
+.formcontainer {
+  background: rgb(0, 78, 161);
+}
+.contact {
+  display: flex;
+  justify-content: center;
+}
+.contbox {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+}
+.cont {
+  align-self: center;
+}
+.red {
+  color: #ee6f21;
+  background: rgb(0, 78, 161);
+}
+.label {
+  margin-top: 10px;
+  display: flex;
+  font-size: 22px;
+  padding: 10px;
+  font-family: 'Gluten', cursive;
+  color: white
+}
+input {
+  font-family: 'Gluten', cursive;
+  font-size: 14px;
+  padding: 10px;
+  margin-left: 10px;
+}
+.inputtext {
+  flex: 1;
+  margin-left: 20px;
+  border: none;
+}
+.send {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.submit {
+  align-items: center;
+  background: rgb(27, 142, 38) radial-gradient(150% 100% at 50% 5px, rgba(255,255,255,.2), rgba(0,0,0,0));
+  box-shadow: inset rgba(0,0,0,.6) 0 -2px 5px, inset rgba(252,255,255,.7) 0 2px 5px, rgba(0,0,0,.8) 0 2px 5px -1px;
+  font-size: 20px;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  width: 180px;
+  font-family: 'Gluten', cursive;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 10px 30px;
+}
+.submit:hover {
+  background: rgb(238,111,33) radial-gradient(130% 100% at 180% 5px, rgba(255, 255, 255, 0.546), rgba(0,0,0,0));
+}
+
 
 @media (max-width: 1024px) {
   .link {
     padding: 10px 20px;
     font-size: 22px;
   }
-   .spanbrand {
+  .spanbrand {
     font-size: 28px;
   }
 }
@@ -336,6 +453,12 @@ hr {
 .categoryButton {
   border: 1px solid white;
 }
+.foottext {
+  font-size: 14px;
+}
+.picabout {
+  width: 400px;
+}
 }
 
 @media (max-width: 450px) {
@@ -348,6 +471,22 @@ hr {
   p {
     font-size: 18px;
   }
+  .picabout {
+    width: 340px;
+  }
+  .label {
+    flex-wrap: wrap;  
+  }
+  .contactcont {
+    width: 300px;
+  }
+  .formcontainer{
+    width: 300px;
+  }
+  .inputtext {
+    margin-left: 0;
+    width: 260px;
+    }
 }
 
 @media (max-width: 393px) {
@@ -357,9 +496,26 @@ hr {
   .shop {
     margin-top: 40px;
   }
-
+  .picabout {
+    width: 300px;
+  }
+  .picsand {
+    width: 280px;
+  }
 }
 
+@media (max-width: 360px) {
+  .score {
+    font-size: 10px;
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
+    margin-left: -28px;
+    }
+    .pabout {
+      padding: 20px;
+    }
+}
 @media (max-width: 320px) {
   .spanbrand {
     font-size: 14px;
@@ -369,9 +525,6 @@ hr {
 }
 .carticon {
   width: 26px;
-}
-.score {
-  font-size: 10px;
 }
 .toyimg {
   width: 200px;
@@ -385,17 +538,50 @@ p {
 .score {
   font-size: 10px;
   padding: 1px 3px;
-  margin-left: -20px;
   margin-top: -1px;
 }
 .cart-name {
   font-size: 14px;
+  margin-left: -30px;
 }
 .icon {
-  width: 50px;
+  width: 40px;
 }
 .sub-h, .sub-hh {
   font-size: 16px;
+}
+.spn {
+  margin-bottom: 11px;
+}
+.btn-q {
+  padding: 5px 10px;
+}
+.picabout {
+  width: 280px;
+}
+.pabout {
+  padding: 20px;
+}
+.valuep {
+  font-size: 16px;
+}
+label {
+  font-size: 18px;
+}
+.inputtext {
+  font-size: 14px;
+}
+.submit {
+  font-size: 14px;
+}
+.contactcont {
+  width: 280px;
+}
+.formcontainer{
+  width: 280px;
+}
+.inputtext {
+  width: 240px;
 }
 }
 
@@ -405,9 +591,8 @@ p {
     margin: 0 10px;
   }
   .carticon {
-    width: 20px;
+    width: 22px;
   }
-  
   .toyimg {
     width: 160px;
   }
@@ -415,9 +600,23 @@ p {
     margin-top: 30px;
   }
   .score {
-    padding: 1px 3px;
+    padding: 1px 2px;
+    margin-left: -24px;
   }
   .icon {
     width: 30px;
+  }
+  .spn {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .picabout {
+    width: 240px;
+  }
+  .picsand {
+    width: 240px;
+  }
+  .foottext {
+    font-size: 12px;
   }
 }
